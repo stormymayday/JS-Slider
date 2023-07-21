@@ -11,6 +11,20 @@ container.innerHTML = people.map((person, slideIndex) => {
     // Destructuring
     const { img, name, job, text } = person;
 
-    return `hello`;
+    return `<article class="slide">
+
+                <img class="img" src="${img}" alt="${name}">
+
+                <h4>${name}</h4>
+
+                <p class="title">${job}</p>
+
+                <p class="text">${text}</p>
+
+                <div class="quote-icon">
+                    <div class="fas fa-quote-right"></div>
+                </div>
+
+            </article>`;
 
 });
