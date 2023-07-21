@@ -11,6 +11,8 @@ container.innerHTML = people.map((person, slideIndex) => {
     // Destructuring
     const { img, name, job, text } = person;
 
+    let position = 'next';
+
     return `<article class="slide">
 
                 <img class="img" src="${img}" alt="${name}">
