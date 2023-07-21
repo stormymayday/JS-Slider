@@ -1,4 +1,5 @@
 import people from './data.js';
 import getElement from './utils/getElement.js';
 
-console.log(people);
+const container = getElement('.slide-container');
+console.log(container);
