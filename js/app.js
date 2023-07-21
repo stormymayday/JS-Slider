@@ -11,7 +11,15 @@ container.innerHTML = people.map((person, slideIndex) => {
     // Destructuring
     const { img, name, job, text } = person;
 
+    // Setting position to next by default
     let position = 'next';
+
+    // Checking if the slideIndex is 0
+    if (slideIndex === 0) {
+
+        position = 'active';
+
+    }
 
     return `<article class="slide ${position}">
 
