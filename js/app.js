@@ -27,4 +27,4 @@ container.innerHTML = people.map((person, slideIndex) => {
 
             </article>`;
 
-});
+}).join('');
