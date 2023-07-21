@@ -3,4 +3,5 @@ import getElement from './utils/getElement.js';
 
 const container = getElement('.slide-container');
 const nextBtn = getElement('.next-btn');
-console.log(nextBtn);
+const prevBtn = getElement('.prev-btn');
+console.log(prevBtn);
