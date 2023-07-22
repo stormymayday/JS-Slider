@@ -53,7 +53,9 @@ const startSlider = (type) => {
     const last = getElement('.last');
     // Selecting next sibling of the active element
     let next = active.nextElementSibling;
-    console.log(next);
+
+    // Removing the class of '.active'
+    active.classList.remove(['active']);
 
     console.log(type);
 
