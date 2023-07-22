@@ -48,7 +48,9 @@ container.innerHTML = people.map((person, slideIndex) => {
 
 const startSlider = (type) => {
 
-    console.log(`hello world`);
+
+    const active = getElement('.active');
+
     console.log(type);
 
 };
