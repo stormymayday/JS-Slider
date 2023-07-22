@@ -61,7 +61,10 @@ const startSlider = (type) => {
     // Removing the class of '.next' from the current selection
     next.classList.remove(['next']);
 
+    // Adding the class of '.last' to the active selection
     active.classList.add('last');
+    // Adding the class of '.next' to the last selection
+    last.classList.add('next');
 
     console.log(type);
 
