@@ -51,7 +51,9 @@ const startSlider = (type) => {
 
     const active = getElement('.active');
     const last = getElement('.last');
-    console.log(last);
+    // Selecting next sibling of the active element
+    let next = active.nextElementSibling;
+    console.log(next);
 
     console.log(type);
 
