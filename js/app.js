@@ -50,6 +50,8 @@ const startSlider = (type) => {
 
 
     const active = getElement('.active');
+    const last = getElement('.last');
+    console.log(last);
 
     console.log(type);
 
