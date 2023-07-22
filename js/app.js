@@ -57,3 +57,9 @@ nextBtn.addEventListener('click', () => {
     startSlider();
 
 });
+
+prevBtn.addEventListener('click', () => {
+
+    startSlider();
+
+});
