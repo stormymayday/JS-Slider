@@ -65,6 +65,8 @@ const startSlider = (type) => {
     active.classList.add('last');
     // Adding the class of '.next' to the last selection
     last.classList.add('next');
+    // Adding the class of '.active' to the next selection
+    next.classList.add('active');
 
     console.log(type);
 
