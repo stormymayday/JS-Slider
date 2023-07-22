@@ -51,3 +51,9 @@ const startSlider = () => {
     console.log(`hello world`);
 
 };
+
+nextBtn.addEventListener('click', () => {
+
+    startSlider();
+
+});
