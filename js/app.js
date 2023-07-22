@@ -46,20 +46,21 @@ container.innerHTML = people.map((person, slideIndex) => {
 
 }).join('');
 
-const startSlider = () => {
+const startSlider = (type) => {
 
     console.log(`hello world`);
+    console.log(type);
 
 };
 
 nextBtn.addEventListener('click', () => {
 
-    startSlider();
+    startSlider('next');
 
 });
 
 prevBtn.addEventListener('click', () => {
 
-    startSlider();
+    startSlider('prev');
 
 });
