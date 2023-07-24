@@ -54,6 +54,14 @@ const startSlider = (type) => {
     // Selecting next sibling of the active element
     let next = active.nextElementSibling;
 
+    // Checking if next does not exist
+    if (!next) {
+
+        // Overrding the original value
+        next = container.firstElementChild;
+
+    }
+
     // Removing the class of '.active' from the current selection
     active.classList.remove(['active']);
     // Removing the class of '.last' from the current selection
