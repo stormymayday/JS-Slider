@@ -48,13 +48,13 @@ container.innerHTML = people.map((person, slideIndex) => {
 
 const startSlider = (type) => {
 
-
     const active = getElement('.active');
     const last = getElement('.last');
+
     // Selecting next sibling of the active element
     let next = active.nextElementSibling;
 
-    // Checking if next does not exist
+    // Checking if next does not exist (ran out of slides)
     if (!next) {
 
         // Overrding the original value
@@ -69,6 +69,33 @@ const startSlider = (type) => {
     // Removing the class of '.next' from the current selection
     next.classList.remove(['next']);
 
+    // 'prev' button functionality
+    if (type === 'prev') {
+
+        // Moving active to the 'left'
+        active.classList.add('next');
+
+        // Making 'last' one the 'active'
+        last.classList.add('active');
+
+        // Re-assigning the next
+        next = last.previousElementSibling;
+
+        // Checking if next does not exist (ran out of slides)
+        if (!next) {
+
+            // Overrding the original value
+            next = container.lastElementChild;
+
+        }
+
+        next.classList.remove(['next']);
+
+        next.classList.add('last');
+
+        return;
+    }
+
     // Adding the class of '.last' to the active selection
     active.classList.add('last');
     // Adding the class of '.next' to the last selection
@@ -76,7 +103,7 @@ const startSlider = (type) => {
     // Adding the class of '.active' to the next selection
     next.classList.add('active');
 
-    console.log(type);
+    // console.log(type);
 
 };
 
